@@ -13,11 +13,8 @@ public class Main {
         for (Integer key:hashmap.keySet()) {
             System.out.println(hashmap.get(key));
         }
+        System.out.println(hashmap.containsKey(2));
         System.out.println(hashmap.isEmpty());
-        HashMap<Integer,String> hss = new HashMap<>();
-        hss.put(1,"shahed");
-        hss.put(2,"shariato");
-        hss.put(1,"samrand");
-        System.out.println(hss.get(1));
+        
     }
 }
