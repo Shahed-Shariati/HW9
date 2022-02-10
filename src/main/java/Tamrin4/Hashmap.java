@@ -2,14 +2,9 @@ package Tamrin4;
 
 import java.util.ArrayList;
 
-public class Hashmap <K ,V>
-        {
-  /* ArrayList<K> key = new ArrayList<>();
-   ArrayList<V> value = new ArrayList<>();*/
-
-
-   ArrayList<K> keys;
-   ArrayList<V> values;
+public class Hashmap <K ,V>{
+  private ArrayList<K> keys;
+  private  ArrayList<V> values;
 
             public Hashmap() {
 
@@ -52,6 +47,12 @@ public class Hashmap <K ,V>
              return true;
           }
          return false;
+       }
+
+       public void replace(K key, V value){
+                V oldValue = get(key);
+                int index = values.indexOf(oldValue);
+                values.set(index,value);
        }
 
 }

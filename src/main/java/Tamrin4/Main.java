@@ -15,6 +15,8 @@ public class Main {
         }
         System.out.println(hashmap.containsKey(2));
         System.out.println(hashmap.isEmpty());
-        
+        System.out.println(hashmap.get(1));
+        hashmap.replace(1,"ssss");
+        System.out.println(hashmap.get(1));
     }
 }

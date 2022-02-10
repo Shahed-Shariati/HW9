@@ -22,6 +22,7 @@ public class Main {
         arrayList.add(7);
         arrayList.add(3);
         arrayList.add(1);
+        arrayList.add(5);
         System.out.println(arrayList);
 
         getList(arrayList);
@@ -43,7 +44,7 @@ public class Main {
                 }
 
             }catch (NoSuchElementException e){
-                System.out.println("dd");
+                System.out.print("");
             }
         }
 
