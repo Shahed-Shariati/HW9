@@ -8,25 +8,25 @@ public class Main {
         System.out.println("Enter your string:");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        int n = str.length();
+        int strLength = str.length();
         Main permutation = new Main();
-        permutation.permute(str, 0, n-1);
+        permutation.permute(str, 0, strLength-1);
     }
 
 
 
 
-    private  void permute(String str, int l, int r)
+    private  void permute(String strInput, int start, int strLength)
     {
-        if (l == r)
-            System.out.println(str);
+        if (start == strLength)
+            System.out.println(strInput);
         else
         {
-            for (int i = l; i <= r; i++)
+            for (int i = start; i <= strLength; i++)
             {
-                str = swap(str,l,i);
-                permute(str, l+1, r);
-                str = swap(str,l,i);
+                strInput = swap(strInput,start,i);
+                permute(strInput, start+1, strLength);
+                strInput = swap(strInput,start,i);
             }
         }
     }
